@@ -28,6 +28,8 @@ body{margin:0;font-family:"Meiryo UI","Segoe UI",system-ui,sans-serif;background
 header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.96);backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
 h1{margin:0;font-size:18px;display:flex;align-items:center;gap:10px}
+h1 a{color:inherit;text-decoration:none}
+h1 a:hover{color:var(--accent)}
 h1 .badge{font-size:11px;background:var(--accent2);color:#02283a;padding:2px 8px;border-radius:10px;font-weight:700}
 .timer{font-size:15px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;display:none}
 main{max-width:720px;margin:0 auto;padding:24px 20px 60px}
@@ -82,7 +84,7 @@ select{padding:9px 12px;border-radius:9px;border:1px solid var(--line);backgroun
 </style>
 </head>
 <body>
-<header><h1>G検定 記述問題集 <span class="badge">__N__問</span></h1><span class="timer" id="timer">00:00</span></header>
+<header><h1><a href="index.html">G検定 記述問題集</a> <span class="badge">__N__問</span></h1><span class="timer" id="timer">00:00</span></header>
 <main id="app"></main>
 <script>
 const QUESTIONS = __DATA__;

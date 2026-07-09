@@ -12,6 +12,8 @@ body{margin:0;font-family:"Meiryo UI","Segoe UI",system-ui,sans-serif;background
 header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.96);backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);padding:14px 20px}
 h1{margin:0 0 10px;font-size:18px;display:flex;align-items:center;gap:10px}
+h1 a{color:inherit;text-decoration:none}
+h1 a:hover{color:var(--accent)}
 h1 .badge{font-size:11px;background:var(--accent2);color:#02283a;padding:2px 8px;border-radius:10px;font-weight:700}
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 #q{flex:1 1 320px;min-width:220px;padding:10px 14px;font-size:15px;border-radius:10px;
@@ -52,7 +54,7 @@ mark{background:#fde047;color:#1f2937;padding:0 1px;border-radius:2px}
 </head>
 <body>
 <header>
-  <h1>G検定 用語集 検索 <span class="badge">659語</span></h1>
+  <h1><a href="index.html">G検定 用語集 検索</a> <span class="badge">659語</span></h1>
   <div class="controls">
     <input id="q" type="search" placeholder="用語・英語・説明で検索（例: 勾配、CNN、過学習／カンマ区切りで複数検索可）" autofocus>
     <select id="cat"><option value="">全カテゴリ</option></select>
